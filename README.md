@@ -1,46 +1,39 @@
-# Startup - Free Next.js Startup Website Template
+🌐 Personal Portfolio — Faeze Esnaashari
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+A Full-Stack Personal Portfolio Website built with Next.js, Tailwind CSS, TypeScript, and Node.js + Express + MongoDB.
+Designed to showcase my skills, professional experience, and projects as a Front-End Developer.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+🚀 Tech Stack
+🖥 Frontend
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js 13 and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+Next.js 16 (App Router)
+TypeScript
+Tailwind CSS (with Dark/Light mode)
+React Icons
+SEO optimized (metadata + structure)
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+⚙️ Backend
+Node.js + Express
+dotenv for environment configuration
 
-[![Startup Pro](https://cdn.nextjstemplates.com/Startup-Pro---Next.js-Starter-Template-for-SaaS-Startups-282e26f7-f543-4ae4-a777-ac306c08cce8.png)](https://nextjstemplates.com/templates/saas-starter-startup)
+💡 Features
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+🌓 Dark / Light Mode toggle
+🎬 Project showcase with video demos
+📞 Contact form (connected to Express backend)
+📈 SEO optimized pages
+📷 YouTube videos embedded directly from my channel
+🧩 Clean, responsive design (mobile-first)
+🧑‍💻 About the Developer
 
+👩‍💻 Name: Faeze Esnaashari
+📍 Location: Shiraz, Iran
+💼 Role: Mid-Level Front-End Developer
+📧 Email: <faeze1377.es@gmail.com>
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+🔗 LinkedIn: <https://www.linkedin.com/in/faeze-esnaashari-a4a6131b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app>
+🌐 Portfolio: faezees.info
+📸 Project: seed.photo
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+“I’m passionate about creating modern, user-centered, and scalable web experiences — merging creativity with clean code.”
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
-
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
-
-### [🔌 Documentation](https://nextjstemplates.com/docs)
-
-### ⚡ Deploy Now
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
-
-
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
