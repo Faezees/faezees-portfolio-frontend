@@ -50,7 +50,7 @@ const Header = () => {
               className="dark:hidden"
             />
             <Image
-              src="/images/logo/final-light2.png"
+              src="/images/logo/final-light.png"
               alt="logo"
               width={110}
               height={25}
