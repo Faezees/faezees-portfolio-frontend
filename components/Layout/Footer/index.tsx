@@ -31,14 +31,14 @@ const Footer = () => {
               <Link href="/" className="group inline-block">
                 <div className="relative overflow-hidden rounded-2xl backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <Image
-                    src="/images/logo/final-dark.png"
+                    src="/images/logo/final-light2.png"
                     alt="logo"
                     width={120}
                     height={30}
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/final-light2.png"
+                    src="/images/logo/final-light.png"
                     alt="logo"
                     width={120}
                     height={30}
