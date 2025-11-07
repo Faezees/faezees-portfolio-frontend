@@ -38,7 +38,7 @@ const Footer = () => {
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/final-light.png"
+                    src="/images/logo/final-light2.png"
                     alt="logo"
                     width={120}
                     height={30}
