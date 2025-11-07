@@ -1,6 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-
+import AboutSectionOne from "@/components/pages/About/AboutSectionOne";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +11,6 @@ const AboutPage = () => {
   return (
     <>
       <AboutSectionOne />
-      <AboutSectionTwo />
     </>
   );
 };

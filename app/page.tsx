@@ -1,8 +1,8 @@
 import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
-import Projects from "@/components/MainProjects";
-import MainSkills from "@/components/MainSkills";
+import Contact from "@/components/pages/home/Contact";
+import Hero from "@/components/pages/home/Hero";
+import Projects from "@/components/pages/home/MainProjects";
+import MainSkills from "@/components/pages/home/MainSkills";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-import ProjectsSection from "@/components/project";
+import ProjectsSection from "@/components/pages/project";
 
 import { Metadata } from "next";
 

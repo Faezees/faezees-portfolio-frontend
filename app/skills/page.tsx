@@ -1,4 +1,4 @@
-import SkillsSection from "@/components/Skills/Skillspage";
+import SkillsSection from "@/components/pages/Skills/Skillspage";
 
 import { Metadata } from "next";
 
