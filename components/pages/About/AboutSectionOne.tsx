@@ -71,13 +71,15 @@ const AboutSectionOne = () => {
                 </h2>
 
                 <p className="text-md mb-8 leading-relaxed text-gray-600 dark:text-gray-300">
-                  I'm Faeze Esnaashari — a Mid-Level Front-End Developer from
-                  Shiraz, Iran. I'm passionate about creating modern,
-                  user-centered, and responsive web experiences. With more than
-                  4 years of professional experience, I have developed
-                  interfaces using React, Next.js, and TypeScript, while
-                  optimizing performance and SEO with a deep focus on clean,
-                  maintainable code.
+                 Hi, I’m Faeze Esnaashari — a Front-End Developer based in Shiraz, Iran.
+                 I’m passionate about crafting modern, user-centered, and responsive web 
+                  experiences that combine creativity with technical precision.
+                 With over 4 years of hands-on experience, I build fast, scalable, 
+                  and accessible interfaces using React, Next.js, and TypeScript — always 
+                  focusing on clean code, performance, and meaningful design.
+                 Outside of coding, I enjoy mountaineering, running, and fitness training, 
+                  because challenging both body and mind keeps me focused and inspired.
+                 “Code for clarity, design for empathy.”
                 </p>
 
                 {/* Skills Grid */}
