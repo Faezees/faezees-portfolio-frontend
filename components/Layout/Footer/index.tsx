@@ -186,7 +186,7 @@ const Footer = () => {
             <span className="inline-block animate-pulse text-red-500">❤️</span>{" "}
             by{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-semibold text-transparent dark:from-blue-400 dark:to-purple-400">
-              Faeze Es
+              Faeze Es using Next.js, Tailwind, and Framer Motion
             </span>
           </p>
         </div>
