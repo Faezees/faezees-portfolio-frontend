@@ -6,7 +6,11 @@ export type ProjectType = {
   imageAlt?: string;
   videoUrl?: string; // YouTube URL or hosted MP4 (optional)
   status?: "live" | "coming-soon" | "project"; // for RAG course etc.
+  role?: string;
+  challenge?: string;
+  result?: string;
   longDescription?: string;
+  technologies?: string[];
   extra?: {
     type?: "mobile" | "web" | "extension" | "course";
     note?: string;

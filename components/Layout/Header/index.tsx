@@ -45,16 +45,16 @@ const Header = () => {
             <Image
               src="/images/logo/final-light2.png"
               alt="logo"
-              width={110}
+              width={70}
               height={25}
-              className="dark:hidden"
+              className="dark:hidden w-[70px] h-auto"
             />
             <Image
               src="/images/logo/final-light.png"
               alt="logo"
-              width={110}
+              width={70}
               height={25}
-              className="hidden dark:block"
+              className="hidden dark:block  w-[70px] h-auto"
             />
           </Link>
 

@@ -47,7 +47,9 @@ const SkillsSection = () => {
           <h2 className="mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
             My Skills
           </h2>
-          <div className="mx-auto h-1.5 w-32 rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
+          <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+            These are not just tools — they’re how I bring ideas to life
+          </p>
         </div>
 
         {/* Skills Grid with 3D Cards */}
@@ -59,10 +61,10 @@ const SkillsSection = () => {
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Card with Glassmorphism */}
-              <div className="relative h-[185px] overflow-hidden rounded-2xl border border-white/20 bg-white/70 p-6 shadow-xl backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-gray-900/70">
+              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/70 p-6 shadow-xl backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-gray-900/70 sm:h-[205px] md:h-[250px] lg:h-[230px] xl:h-[200px]">
                 {/* Gradient Border on Hover */}
                 <div
-                  className={`absolute inset-0 h-[185px] rounded-2xl bg-gradient-to-r ${skill.color} opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-30`}
+                  className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${skill.color} opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-30`}
                 ></div>
 
                 {/* Content */}
@@ -70,10 +72,10 @@ const SkillsSection = () => {
                   {/* Icon and Name */}
                   <div className="mb-4 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <span className="text-4xl transition-transform duration-500 group-hover:rotate-12 group-hover:scale-125">
+                      <span className="transition-transform duration-500 group-hover:rotate-12 group-hover:scale-125 sm:text-xl lg:text-4xl">
                         {skill.icon}
                       </span>
-                      <p className="text-lg font-bold text-black dark:text-white">
+                      <p className="font-bold text-black dark:text-white sm:text-sm lg:text-lg">
                         {skill.name}
                       </p>
                     </div>
@@ -103,7 +105,7 @@ const SkillsSection = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-sm text-gray-600 transition-colors duration-300 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-200">
+                  <p className="text-sm leading-relaxed text-gray-600 transition-colors duration-300 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-gray-200">
                     {skill.description}
                   </p>
                 </div>
@@ -127,7 +129,7 @@ const SkillsSection = () => {
             {softSkills.map((skill, i) => (
               <div
                 key={i}
-                className={`group relative overflow-hidden rounded-3xl border border-white/20 ${skill.bgColor} p-8 shadow-xl backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl dark:border-white/10`}
+                className={`group relative overflow-hidden rounded-3xl border border-white/20 ${skill.bgColor} p-6 px-8 shadow-xl backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl dark:border-white/10`}
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 {/* Animated gradient overlay */}
@@ -147,21 +149,19 @@ const SkillsSection = () => {
                 {/* Content */}
                 <div className="relative">
                   {/* Icon with glow */}
-                  <div className="mb-4 inline-flex">
-                    <span className="relative text-6xl transition-all duration-500 group-hover:scale-110">
+                  <div className="mb-4 inline-flex gap-2 items-end">
+                    <span className="relative text-3xl transition-all duration-500 group-hover:scale-110">
                       {skill.icon}
                       <span
                         className={`absolute inset-0 -z-10 animate-pulse rounded-full bg-gradient-to-r ${skill.gradient} opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-50`}
                       ></span>
                     </span>
+                    <h4
+                      className={`mb-0 text-md font-bold transition-all duration-300 group-hover:bg-gradient-to-r md:text-2xl group-hover:${skill.gradient} group-hover:bg-clip-text`}
+                    >
+                      {skill.title}
+                    </h4>
                   </div>
-
-                  {/* Title with gradient on hover */}
-                  <h4
-                    className={`mb-3 text-xl font-bold transition-all duration-300 group-hover:bg-gradient-to-r md:text-2xl group-hover:${skill.gradient} group-hover:bg-clip-text`}
-                  >
-                    {skill.title}
-                  </h4>
 
                   {/* Description */}
                   <p className="text-sm leading-relaxed text-gray-700 transition-colors duration-300 group-hover:text-gray-900 dark:text-gray-300 dark:group-hover:text-white md:text-base">

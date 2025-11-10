@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 px-5 py-20 dark:from-gray-900 dark:to-gray-800 sm:px-10 md:py-28 lg:px-32 lg:py-36"
+      className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 px-5 py-20 dark:from-gray-900 dark:to-gray-800 sm:px-10 md:py-20 lg:px-32 lg:py-20"
     >
       {/* Background Decorations */}
       <div className="absolute left-0 top-0 -z-10 opacity-20">
@@ -114,7 +114,7 @@ const Contact = () => {
             📬 Get In Touch
           </motion.span> */}
 
-          <h2 className="mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
+          <h2 className="pt-5 mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
             Let's Work Together
           </h2>
 

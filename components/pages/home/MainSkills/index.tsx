@@ -7,7 +7,7 @@ const MainSkills = () => {
   return (
     <section
       id="main-skills"
-      className="relative overflow-hidden bg-gray-50 bg-gradient-to-b px-5 dark:bg-gray-900 sm:px-10 md:py-28 lg:px-32 lg:py-36"
+      className="relative overflow-hidden bg-gray-50 bg-gradient-to-b px-5 dark:bg-gray-900 sm:px-10 md:py-28 lg:px-32 lg:py-0"
     >
       <div className="container relative z-10 mx-auto px-4">
         {/* Section header */}
@@ -17,7 +17,9 @@ const MainSkills = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="pt-5 pb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
+          <h2 className="pt-5 pb-4 bg-gradient-to-r from-gray-900 via-blue-800
+           to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent
+            dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
             Main Skills
           </h2>
 

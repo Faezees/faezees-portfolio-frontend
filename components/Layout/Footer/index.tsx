@@ -34,15 +34,15 @@ const Footer = () => {
                     src="/images/logo/final-light2.png"
                     alt="logo"
                     width={120}
-                    height={30}
-                    className="dark:hidden"
+                    height={50}
+                    className="h-auto dark:hidden"
                   />
                   <Image
                     src="/images/logo/final-light.png"
                     alt="logo"
                     width={120}
-                    height={30}
-                    className="hidden dark:block"
+                    height={50}
+                    className="hidden h-auto dark:block"
                   />
                   {/* Glow effect */}
                   <div className="absolute -inset-1 -z-10 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-20" />

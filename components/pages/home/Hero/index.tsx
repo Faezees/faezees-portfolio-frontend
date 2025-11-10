@@ -3,8 +3,19 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Hero = () => {
+  const [hovered, setHovered] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
   return (
     <section
       id="home"
@@ -148,6 +159,20 @@ const Hero = () => {
               </span>
             </motion.h1>
 
+            {/* 👇 Added tagline under main heading */}
+            <motion.p
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+                delay: 0.25,
+              }}
+              className="text-xs italic text-gray-500 dark:text-gray-400 sm:text-sm"
+            >
+              “Turning complex ideas into delightful digital experiences.”
+            </motion.p>
+
             <motion.p
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -242,7 +267,15 @@ const Hero = () => {
               <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
                 Tech Stack:
               </span>
-              {["Next.js", "React", "TypeScript", "Tailwind"].map((tech, i) => (
+              {[
+                "Next.js",
+                "React",
+                "TypeScript",
+                "javaScript",
+                "Tailwind",
+                "React Native",
+                "Git",
+              ].map((tech, i) => (
                 <motion.span
                   key={tech}
                   animate={{ opacity: 1, scale: 1 }}
@@ -257,7 +290,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Image - Right */}
-          <div className="mt-12 flex w-full justify-center px-4 lg:mt-0 lg:w-1/2">
+          <div className="relative flex w-full justify-center px-4 pt-10 sm:pt-0 lg:w-1/2">
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -282,16 +315,34 @@ const Hero = () => {
                 className="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 opacity-20 blur-2xl"
               />
 
+              {hovered && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                  animate={{
+                    opacity: 1,
+                    scale: 1,
+                    x: mousePos.x - 140,
+                    y: mousePos.y - 60,
+                  }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 120,
+                    damping: 15,
+                  }}
+                  className="pointer-events-none absolute z-30 w-max rounded-lg bg-blue-600/70 px-3 py-1.5 text-xs font-medium text-white shadow-lg dark:bg-blue-500/70"
+                >
+                  Currently open to remote or hybrid opportunities.
+                </motion.div>
+              )}
+
+              {/* Main Image */}
               <motion.div
-                whileHover={{
-                  scale: 1.09,
-                  rotate: [0, 10, 0],
-                }}
-                transition={{
-                  scale: { type: "spring", stiffness: 300, damping: 20 },
-                  rotate: { duration: 0.5 },
-                }}
-                className="relative z-10 h-[280px] w-[280px] overflow-hidden rounded-full border-4 border-blue-500 bg-gradient-to-br from-blue-100 to-blue-50 p-2 shadow-2xl dark:border-blue-400 dark:from-blue-900 dark:to-gray-800 sm:h-[420px] sm:w-[420px]"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                onMouseMove={handleMouseMove}
+                whileHover={{ scale: 1.09 }}
+                className="w-[200px] xs:h-[280px] relative z-10 h-[200px] overflow-hidden rounded-full border-4 border-blue-500 bg-gradient-to-br from-blue-100 to-blue-50 p-2 shadow-2xl dark:border-blue-400 dark:from-blue-900 dark:to-gray-800 xs:w-[280px] sm:h-[420px] sm:w-[420px]"
               >
                 <div className="h-full w-full overflow-hidden rounded-full">
                   <Image
@@ -302,13 +353,13 @@ const Hero = () => {
                     priority
                   />
                 </div>
+
+                {/* Tooltip on Hover */}
               </motion.div>
 
               {/* Floating Icons */}
               <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                }}
+                animate={{ y: [0, -10, 0] }}
                 transition={{
                   duration: 3,
                   repeat: Infinity,
@@ -320,31 +371,27 @@ const Hero = () => {
               </motion.div>
 
               <motion.div
-                animate={{
-                  y: [0, -15, 0],
-                }}
+                animate={{ y: [0, -15, 0] }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut",
                   delay: 0.5,
                 }}
-                className="absolute -left-4 bottom-16 rounded-full bg-blue-600/30 p-3 shadow-lg backdrop-blur-md sm:-left-14 sm:bottom-24 sm:p-4"
+                className="absolute -left-8 bottom-16 rounded-full bg-blue-600/30 p-3 shadow-lg backdrop-blur-md sm:-left-14 sm:bottom-24 sm:p-4"
               >
                 <span className="text-2xl sm:text-3xl">⚡</span>
               </motion.div>
 
               <motion.div
-                animate={{
-                  y: [0, -12, 0],
-                }}
+                animate={{ y: [0, -12, 0] }}
                 transition={{
                   duration: 3.5,
                   repeat: Infinity,
                   ease: "easeInOut",
                   delay: 1,
                 }}
-                className="absolute -right-2 bottom-8 rounded-full bg-blue-400/30 p-3 shadow-lg backdrop-blur-md sm:-right-7 sm:bottom-12 sm:p-4"
+                className="absolute -right-4 bottom-8 rounded-full bg-blue-400/30 p-3 shadow-lg backdrop-blur-md sm:-right-7 sm:bottom-12 sm:p-4"
               >
                 <span className="text-2xl sm:text-3xl">🚀</span>
               </motion.div>
@@ -354,7 +401,7 @@ const Hero = () => {
       </div>
 
       {/* Animated Background Shape - Bottom Left */}
-      <div>
+      <div className="absolute bottom-5 left-0 z-[-1] hidden sm:block">
         <svg
           width="364"
           height="201"
