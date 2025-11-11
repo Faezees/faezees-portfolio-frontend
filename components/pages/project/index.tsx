@@ -87,7 +87,9 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
 
         {/* Content */}
         <div className="p-5">
-          <h3 className="mb-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
+          <h3 className="mb-2 text-xl font-bold
+           text-gray-900 transition-colors duration-300
+            group-hover:text-blue-600 dark:text-white dark:group-hover:text-blue-400">
             {project.title}
           </h3>
 

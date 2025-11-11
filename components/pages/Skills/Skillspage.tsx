@@ -30,7 +30,7 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section className="slg:px-32 relative mb-16 overflow-hidden px-5 pt-0 sm:px-10 md:pt-20 lg:pt-28">
+    <section className="slg:px-32 relative mb-16 overflow-hidden px-5  sm:px-10 ">
       {/* Animated Mesh Gradient Background */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-50 to-pink-50 opacity-60 dark:from-blue-950/20 dark:via-purple-950/20 dark:to-pink-950/20"></div>
 
@@ -41,10 +41,9 @@ const SkillsSection = () => {
 
       <div className="container relative">
         {/* Title with Gradient */}
-        <div
-          className={`} mx-auto mb-16 mt-32 max-w-5xl text-center transition-all duration-1000 md:mt-24`}
-        >
-          <h2 className="mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-900 bg-clip-text text-4xl font-extrabold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200 sm:text-5xl md:text-6xl">
+
+        <div className="mb-16 mt-32 text-center">
+          <h2 className="bg-gradient-to-r from-blue-600 via-blue-600 to-pink-600 bg-clip-text pb-4 text-5xl font-extrabold text-transparent md:text-6xl">
             My Skills
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
@@ -149,7 +148,7 @@ const SkillsSection = () => {
                 {/* Content */}
                 <div className="relative">
                   {/* Icon with glow */}
-                  <div className="mb-4 inline-flex gap-2 items-end">
+                  <div className="mb-4 inline-flex items-end gap-2">
                     <span className="relative text-3xl transition-all duration-500 group-hover:scale-110">
                       {skill.icon}
                       <span
@@ -157,7 +156,7 @@ const SkillsSection = () => {
                       ></span>
                     </span>
                     <h4
-                      className={`mb-0 text-md font-bold transition-all duration-300 group-hover:bg-gradient-to-r md:text-2xl group-hover:${skill.gradient} group-hover:bg-clip-text`}
+                      className={`text-md mb-0 font-bold transition-all duration-300 group-hover:bg-gradient-to-r md:text-2xl group-hover:${skill.gradient} group-hover:bg-clip-text`}
                     >
                       {skill.title}
                     </h4>

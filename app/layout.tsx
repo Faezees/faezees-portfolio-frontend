@@ -41,7 +41,7 @@ export default function RootLayout({
             style={{
               scaleX,
               position: "fixed",
-              top: 100,
+              top: 78,
               left: 0,
               right: 0,
               height: 10,
