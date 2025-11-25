@@ -18,11 +18,6 @@ export default function Home() {
       <Hero />
       <MainSkills />
       <Projects />
-      {/* <AboutSectionOne /> */}
-      {/* <AboutSectionTwo /> */}
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
-      {/* <Blog /> */}
       <Contact />
     </>
   );
